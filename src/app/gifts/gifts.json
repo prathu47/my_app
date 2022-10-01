@@ -1,0 +1,44 @@
+[
+    {
+        "pid":1,
+        "pname":"Samsung",
+        "pdescription":"Samsung - Top Loading",
+        "price":10000,
+        "img":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTfIENDuauv7ZFXGNRSQuVdIdyef-AJQ-tHSP4P5ahKNe7_eDc7WXcITgD0kXRnlbdHpBFSnKfeETvTuKUzMCURW_Ln2WvoUnPXoqw70I8&usqp=CAE"
+    },
+    {
+        "pid":2,
+        "pname":"LG",
+        "pdescription":"LG - Automatic",
+        "price":18990,
+        "img":"https://mlvtgiqzoszz.i.optimole.com/Sb3K8mU-Band6g6L/w:auto/h:auto/q:90/https://www.appliancecity.co.uk/wp-content/uploads/2017/09/LG-fh495bdn8-washer-1.jpg"
+    },
+    {
+        "pid":3,
+        "pname":"Whirpool",
+        "pdescription":"Whirlpool - Front Loading",
+        "price":21990,
+        "img":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTIKMRFlDJFioKRat9eSA5eEIp7FvngMnBV-Z6HB1857eYB-bIGnI8B1nOwh_K_eukiSTi83Y4j-6CrGrg1E3_OFs3PR76xkQnM1YiDOfZE2LBrn1W-w-Ih&usqp=CAE"
+    },
+    {
+        "pid":4,
+        "pname":"Godrej",
+        "pdescription":"Godrej - Automatic",
+        "price":21290,
+        "img":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTsXF8Nc2C0VPC8AKnOLDPuMXRKMw-xsZb2_b3OPM8PIf-pedseIg-4uvYWVCfd3ncIZMFqX8ndao_DCpyIZMF9vdE60NnGjtecZcHJlfxWLd5LF6T5_yWlNA&usqp=CAE"
+    },
+    {
+        "pid":5,
+        "pname":"Croma",
+        "pdescription":"Croma - Top Loading",
+        "price":25999,
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1655208534/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/243594_mavdro.png/mxw_2048,f_auto"
+    },
+    {
+        "pid":6,
+        "pname":"Bosch",
+        "pdescription":"Bosch - Front Loading",
+        "price":43490,
+        "img":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRfWRzfm7pmLwjjQHmnoB9YCTphSxHni2F63bXqcHk8lgbEUDhtRmS6oa6vf0xHhqH3FkiTUphL59vGffHqF1wRdmPRrKqvx1q4K6pufCLu53zooFio9pNR&usqp=CAE"
+    }
+]

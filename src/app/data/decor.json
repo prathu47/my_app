@@ -1,0 +1,45 @@
+[
+    {
+        "pid":1,
+        "pname":"Lamp",
+        "pdescription":" Add your creative looks to lightup your lamp ",
+        "price":800,
+        "img":"https://m.media-amazon.com/images/I/81AzD-hsl-L._SX425_.jpg"
+    },
+    {
+        "pid":2,
+        "pname":"Mirror Decor",
+        "pdescription":"Wall decors to decorate your mirror and clocks",
+        "price":2000,
+        "img":"https://cdn.citymapia.com/kottayam/anna-woods/17370/Portfolio.jpg?biz=2950"
+    },
+    {
+        "pid":3,
+        "pname":"Home decors",
+        "pdescription":"Pleasant statue of Budha",
+        "price":1990,
+        "img":"https://hometown.gumlet.io/media/cms/icons/Kitchenware/figurines.jpg?w=200&dpr=2.6"
+    },
+    {
+        "pid":4,
+        "pname":"Home decors",
+        "pdescription":"Decor your showcases to give pleasent look",
+        "price":1290,
+        "img":"https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/61-26dUF7kL._SX679_.jpg"
+    },
+    {
+        "pid":5,
+        "pname":"WaterFountain",
+        "pdescription":"Mini fountain with gods idol",
+        "price":1999,
+        "img":"https://hometown.gumlet.io/media/cms/icons/Kitchenware/fountains.jpg?w=200&dpr=2.6"
+    },
+    {
+        "pid":6,
+        "pname":"Showpieces",
+        "pdescription":"Showpiece decors",
+        "price":1490,
+        "img":"https://rukminim1.flixcart.com/image/416/416/khqllzk0/showpiece-figurine/z/e/7/kcfacesetof3-kunti-craft-original-imafxnzkygmvmprq.jpeg?q=70"
+    }
+
+]

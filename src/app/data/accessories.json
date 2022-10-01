@@ -1,0 +1,58 @@
+[
+    {
+        "pid":1,
+        "image":"https://cdn.shopify.com/s/files/1/1306/4195/products/1_F_2_dd983ecc-283b-4a93-8aee-7924e9f158e2_1024x1024.jpg?v=1659099749",
+        "pname":"Neon Light",
+        "pdescription":"Name plated Neon Lights",
+        "price":5000
+        
+    },
+    {
+        "pid":2,
+        "image":"https://rukminim1.flixcart.com/image/832/832/klo27bk0/showpiece-figurine/o/5/l/wdd-033-brothers-creation-original-imagyr26t4gtq8zt.jpeg?q=70",
+        "pname":"Wall Hangings",
+        "pdescription":"Decor your wall with customized hangings",
+        "price":500
+    },
+    {
+        "pid":3,
+        "image":"https://rukminim1.flixcart.com/image/612/612/ksez24w0/hair-accessory/m/o/l/hair-clips-for-women-flower-hair-comb-pins-slide-hair-clips-original-imag5zrebnbmywhg.jpeg?q=70",
+        "pname":"Personalized Accessories",
+        "pdescription":"Custom coated accessories",
+        "price":1000
+    
+    },
+    {
+        "pid":4,
+        "image":"https://static.wixstatic.com/media/9e8b72_054cc3d8c2ae4f7e8defbadc3a2dd2bb~mv2.jpg/v1/fill/w_315,h_472,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ss2.jpg",
+        "pname":"Mould Impression",
+        "pdescription":"Impression of Your memory",
+        "price":3500
+    
+    },
+    {
+        "pid":5,
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHGpcLzwTZf8mYEz3vNzmHDPxNAIa7VQXvbg&usqp=CAU",
+        "pname":"PhotoFrames",
+        "pdescription":"Perserve your memories",
+        "price":2500
+    
+    },
+    {
+        "pid":6,
+        "image":"https://cdn.shopify.com/s/files/1/0030/9759/1872/products/el-025-015_b_800x.jpg?v=1570516375",
+        "pname":"Wooden Idels",
+        "pdescription":"Bring out the acent looks",
+        "price":2000
+    
+    },
+    {
+        "pid":7,
+        "image":"https://cdn.shopify.com/s/files/1/1306/4195/products/wallmantra-wood-wall-shelves-butterfly-shape-backlit-wood-wall-shelf-book-shelf-night-light-walnut-finish-33383892680870_1024x1024.jpg?v=1651732675",
+        "pname":"Wooden Organizers",
+        "pdescription":"Wall organizers",
+        "price":1000
+    
+    }
+
+]

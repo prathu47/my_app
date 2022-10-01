@@ -1,0 +1,33 @@
+.prodimg{
+    height:40px;
+    width:40px;
+    margin-left:100px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius:10px;
+
+}
+.background{
+    background-image: url("src\assets\bgw.jpg"); 
+}
+.body{
+    margin-left: 40px;
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-color: black;
+    border-radius: 30px;
+    border-style: inset;
+}
+.card{
+    margin-left: 30px;
+    margin-right: 200px;
+}
+.table-bordered{
+    width: fit-content;
+    
+}
+.box{
+    margin-left: 150px;
+    margin-right: 40px;
+}

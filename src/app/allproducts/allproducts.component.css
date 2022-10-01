@@ -1,0 +1,17 @@
+.prodimg{
+    height:180px;
+    width:200px;
+    margin-left:100px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius:10px;
+
+}
+h3{
+    margin-left:10px;
+    color:blue;
+    text-shadow: 2px 3px 2px red;
+}
+.background{
+    background-image: url("src\assets\bgw.jpg"); 
+}

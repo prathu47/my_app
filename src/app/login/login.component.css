@@ -1,0 +1,43 @@
+input {
+    width: 60%;
+    margin-left: 50px;
+}
+
+label {
+    margin-left: 50px;
+}
+h4{
+    margin-left: 600px;
+
+}
+
+form {
+    padding: 20px;
+    margin-left: 200px;
+    margin-top: 40px;
+    width: 40%;
+    border-style: inset;
+    border-radius: 10px;
+    border-color: black;
+    box-shadow: 2px 3px 4px yellow;
+}
+
+form:hover {
+    color: rgb(43, 43, 40);
+    background-image: url("src\assets\bgw.jpg");
+    transform:scale(1.2);
+    opacity: 0.90;
+
+}
+
+button {
+    margin-left: 100px;
+}
+
+span {
+    width: 60%;
+    margin-left: 100px;
+}
+.background{
+    background-image: url("src\assets\bgw.jpg"); 
+}

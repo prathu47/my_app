@@ -1,0 +1,30 @@
+<!--fetch all the records from fridge property in the .ts file which is accessing the refrigerator.json-->
+<!--ng g c washingmachine/washingmachinedeals-->
+<div *ngFor="let w of gifts" style="border:none;">
+    <div class="row">
+        <!--2nd column-->
+            <div class="card-body col-lg-12">
+                <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:15px;">
+                    <div class="col-lg-3">
+                        <!--Property Binding-->
+                        <img [src]="w.img">
+                    </div>
+                    <div class="col-lg-9" style="margin-top:20px;">
+                        <!--Interpolation Binding-->
+                        <div>
+                            Product: {{w.pname | uppercase}}
+                            <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+                        </div>
+                        <hr>
+                        <div [hidden]="productDetail">
+                            Description: {{w.pdescription}}
+                            <br>
+                            Price: {{w.price | currency:'INR'}}
+                            <br>
+                            <app-counter></app-counter>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

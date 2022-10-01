@@ -1,0 +1,18 @@
+
+
+<div class="row"  *ngFor="let prod of product" [ngSwitch]="prod.Status" style="border:none;float:left;">
+  
+    <div class="card">
+      <a href={{prod.url}}>
+        <div>
+            <img [src]="prod.image" alt="">
+            <hr>
+        </div>
+        <div class="card-body">
+          <p class="desc"><b> Product:</b> {{prod.pname | uppercase}}</p>
+        
+           
+        </div> 
+      </a>   
+    </div>
+  </div>

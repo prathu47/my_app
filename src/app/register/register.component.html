@@ -1,0 +1,123 @@
+<!-- Property Binding
+<form [formGroup]="registerForm" novalidate>
+    <div class="form-group">
+        <label>User Name</label>
+        <input type="text" class="form-control" placeholder="Enter username" formControlName="username"
+            [ngClass]="{'is-invalid':username.errors && (username.touched||username.dirty),'is-valid':username.valid}">
+        <!--Error message for username-->
+<!-- <span class="invalid-feedback">
+            <strong *ngIf="username.errors?.required">Name is Required</strong>
+            <strong *ngIf="username.errors?.pattern">Only Alphabets allowed(A-Z and a-z)</strong>
+            <strong *ngIf="username.errors?.minlength">Min length is 6 characters</strong>
+            <strong *ngIf="username.errors?.maxlength">Max length is 16 characters</strong>
+        </span>
+    </div>
+    <div class="form-group">
+        <label>User E-mail</label>
+        <input type="email" class="form-control" placeholder="Enter email" formControlName="useremail"
+            [ngClass]="{'is-invalid':useremail.errors && (useremail.touched||useremail.dirty),'is-valid':useremail.valid}">
+        <!--Error message for username-->
+<!-- <span class="invalid-feedback">
+            <strong *ngIf="useremail.errors?.required">Email is Required</strong>
+        </span>
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" placeholder="Enter Password" formControlName="password"
+            [ngClass]="{'is-invalid':password.errors && (password.touched||password.dirty),'is-valid':password.valid}"> -->
+<!--Error message for username-->
+<!-- <span class="invalid-feedback">
+            <strong *ngIf="password.errors?.required">Password is Required</strong>
+            <strong *ngIf="password.errors?.pattern">Pattern does not match</strong>
+        </span>
+    </div>
+    <div class="form-group">
+        <label>Mobile</label>
+        <input type="text" class="form-control" placeholder="Enter Mobile" formControlName="mobile"
+            [ngClass]="{'is-invalid':mobile.errors && (mobile.touched||mobile.dirty),'is-valid':mobile.valid}"> -->
+<!--Error message for mobile-->
+<!-- <span class="invalid-feedback">
+            <strong *ngIf="mobile.errors?.required">Mobile number is Required</strong>
+        </span>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary" (click)="onSubmit()">SUBMIT</button>&nbsp;
+    <a class="btn btn-primary" href="https://rzp.io/i/J7OJXSP9KE" target="_blank">Register</a>
+</form>
+<br>
+<br> -->
+<!--Validation Classes-->
+<!--Valid/InValid-->
+<!--Touched/Untouched-->
+<!--Dirty/Pristine-->
+<!-- <div class="form-group">
+    <div class="alert alert-info">
+        <p>Valid: <b>{{username.valid}}</b></p>
+        <p>InValid: <b>{{username.invalid}}</b></p>
+        <p>Touched: <b>{{username.touched}}</b></p>
+        <p>Untouched: <b>{{username.untouched}}</b></p>
+        <p>Dirty: <b>{{username.dirty}}</b></p>
+        <p>Pristine: <b>{{username.pristine}}</b></p>
+    </div>
+</div>
+<br>
+<br> -->
+<!--Retrieve the details from the form and render them using the json pipe-->
+<!-- <div>
+    <h3>User Details</h3>
+    <pre>{{registerForm.value | json}}</pre>
+</div>  -->
+
+<div class="mt-5 background">
+    <div class="col-md-12 min-vh-100 d-flex flex-column">
+        <div class="login-form">
+            <form class="mt-5" [formGroup]="registerForm" (ngSubmit)="submitHandler()">
+                <h2 class="text-center secondary ms-mb-m main-heading ng-binding">Signup with Pal Craftastic</h2>
+                <br>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="username" formControlName="username"
+                        placeholder="Enter Username">
+                    <label class="error ng-binding" *ngIf="submitted && f['username'].invalid">Name is required
+                    </label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="useremail" formControlName="useremail"
+                        placeholder="Enter email">
+                    <label class="error ng-binding" *ngIf="submitted && f['useremail'].invalid">Email is required
+                        </label>
+                    <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['useremail']">Email must
+                        be a
+                        valid email address</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" formControlName="password"
+                        placeholder="Enter password">
+                    <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['password']">Password is
+                        required</label>
+                    <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['minlength']">Password
+                        must be at least 6 characters</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="mobile" formControlName="mobile"
+                        placeholder="Enter Mobile number">
+                    <label class="error ng-binding" *ngIf="submitted && f['mobile'].errors?.['required']">Mobile number
+                        is
+                        required</label>
+
+                </div>
+                <br>
+                <button type="submit" class="btn btn-warning">Register</button>
+                <div class="text-center ms-mt-x ms-mb-m register-already-account" style="padding-top:30px">
+                    <span class="ms-fs-12 ng-binding">Already have an account?
+                        <a class="secondary ng-binding" href="login">
+                            Login!
+                        </a>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

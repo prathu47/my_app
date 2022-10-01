@@ -1,0 +1,19 @@
+.myHeader {
+    background-color: rgb(97, 224, 247);
+    height:30%;
+    padding: 10px;
+    text-emphasis-style: 50%;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 1000;
+    border-radius: 20px;
+    
+  }
+  .myHeader:hover {
+    background: #0a5bb3;
+  }
+  
+  h1 {
+    letter-spacing: 5px;
+    margin-top: 10px;
+  }

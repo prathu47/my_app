@@ -1,0 +1,81 @@
+<div class="background">
+<nav class="navbar navbar-dark bg-dark background body">
+    <div class="container">
+      <h1 style="color: aliceblue; font-size: 20px;">PRODUCT DETAILS</h1>
+      <div class="d-flex">
+        <!-- Button trigger modal -->
+        <button (click)="clickAddProduct()" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class=""><span>Add</span></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="box">
+  <table class="table table-hover body table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Product ID</th>
+        <th scope="col">Product Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Price</th>
+        <th scope="col">Product Image</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of productData body">
+        <td>{{product.id}}</td>
+        <td>{{product.pname}}</td>
+        <td>{{product.pdescription}}</td>
+        <td>{{product.price}}</td>
+        <td>
+          <img [src]="product.img" class="prodimg">
+        </td>
+        <td>
+          <button (click)="onEdit(product)" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>&nbsp;
+          <button (click)="deleteProducts(product)" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  
+  <!-- Modal -->
+  <div class="modal fade card" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Product details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formValue"> 
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="pname" class="form-control" formControlName="pname">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Description</label>
+              <input type="pdescription" class="form-control" formControlName="pdescription">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Price</label>
+              <input type="price" class="form-control" formControlName="price">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Image</label>
+              <input type="img" class="form-control" formControlName="img">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" *ngIf="showAdd" (click)="postProductDetails()" class="btn btn-primary">Add</button>
+          <button type="button" *ngIf="showUpdate" (click)="updateProductDetails()" class="btn btn-warning">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

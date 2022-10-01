@@ -1,0 +1,83 @@
+[
+    {
+        "pid":1,
+        "image": "/assets/image5.jpg",
+        "pname":"Neon Lights",
+        "pdescription":"Customize your neon leds to blink a beauty of the house",
+        "Status":"In Stock",
+        "price": 2000,
+        "url": "http://localhost:4200/accessiories"
+    },
+    {
+        "pid":2,
+        "image":"/assets/image4.jpg",
+        "pname":"Wall Hangings",
+        "pdescription":"Decor the hangings to add on special apperences to the house",
+        "Status":"Out of Stock",
+        "price": 1000,
+        "url": "https://www.neonattack.com/"
+    },
+    {
+        "pid":3,
+        "image":"/assets/bookmark.png",
+        "pname":"BookMarks",
+        "pdescription":"Now Customize your bookmarks which passionates to open",
+        "Status":"In Stock",
+        "price": 750 ,
+        "url": "https://www.neonattack.com/"
+    },
+    {
+        "pid":4,
+        "image":"/assets/image8.jpg",
+        "pname":"Mould Impression",
+        "pdescription":"Preserve your Memories to cherish the existence",
+        "Status":"In Stock",
+        "price": 3000 ,
+        "url": "https://www.neonattack.com/"
+    },
+    {
+        "pid":5,
+        "image":"/assets/image9.jpg",
+        "pname":"Photoframes",
+        "pdescription":"Decorate your with full of love and memories",
+        "Status":"In Stock",
+        "price": 3000 ,
+        "url": "https://www.neonattack.com/"
+    },
+    {
+        "pid":6,
+        "image":"/assets/image11.jpg",
+        "pname":"Mould Impression",
+        "pdescription":"Preserve your Memories to cherish the existence",
+        "Status":"Out of Stock",
+        "price": 2000,
+        "url": "https://www.neonattack.com/"
+    },
+    {
+        "pid":7,
+        "image":"/assets/hope.png",
+        "pname":"Wall Hangings",
+        "pdescription":"Decor the hangings to add on special apperences to the house",
+        "Status":"In Stock",
+        "price": 999 ,
+        "url": "https://www.neonattack.com/"
+    },
+    {
+        "pid":8,
+        "image":"/assets/wood.jpeg",
+        "pname":"Wooden Sculpters",
+        "pdescription":"It is always the tradition in you bring back days",
+        "Status":"In Stock",
+        "price": 4000,
+        "url": "https://www.neonattack.com/"
+    },
+    {
+        "pid":9,
+        "image":"/assets/image18.jpeg",
+        "pname":"Customize to beloved",
+        "pdescription":"Choose the products to the beloved and surprise with customization",
+        "Status":"In Stock",
+        "price": 1000 ,
+        "url": "https://www.neonattack.com/"
+    }
+]

@@ -1,0 +1,78 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-" style="background-color: #66e7f6">
+    <div class="container-fluid">
+      <!--STRING INTERPOLATION-->
+      <!--PROPERTY BINDING IN img tag-->
+      <a class="navbar-brand" href="#">
+        <img [src]="logo" alt="PAL Craftastic"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <!--href - render the entire page-->
+            <!--SPA - Partial Rendering - routerLink-->
+            <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="admin" >Admin</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" routerLink="register" *ngIf="!auth">Register</a>
+          </li>
+
+          
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contact" *ngIf="auth">Help Center</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" routerLink="cards"  *ngIf="auth">All Products</a>
+          </li>
+          
+          
+          <li class="nav-item dropdown"  *ngIf="auth">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" routerLink="accessiories">Accessories</a></li>
+              
+              <li><a class="dropdown-item" routerLink="decor">Decor</a></li>
+              <li><a class="dropdown-item" href="#">Office</a></li>
+              <li><a class="dropdown-item" routerLink="gifts">Gifts</a></li>
+              <li><a class="dropdown-item" href="#">Stationary</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="deals"  *ngIf="auth">Deals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="arivals"  *ngIf="auth" >NewArivals</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex">
+          <input type="text" #productname placeholder="Enter product name" style="border-radius:10px;">&nbsp;
+          <!--EVENT BINDING-->
+          <button class="btn btn-warning" type="submit" (click)="search_product(productname.value);productname.value=''" style="border-radius:10px;">Search</button>
+          <!--Access the Search Component-->
+          <br>
+          
+          &nbsp;&nbsp;&nbsp;
+          <app-search [product]="productentered"></app-search>
+          <button routerLink='cartitem' style="height:5px;border:none;"  *ngIf="auth" >
+            <span class="fa fa-cart-plus" style="font-size:16px;color:black"><sup class="text-warning" style="font-size:10px;margin-left: 3px;;">{{cartCount}}</sup></span>
+          </button> &nbsp;&nbsp;&nbsp;
+          <a class="btn btn-outline-warning" type="submit" style="border-radius:10px;color:black;" routerLink="login"
+          *ngIf="auth">Logout</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br>
+   
+  

@@ -1,0 +1,17 @@
+img{
+    height:150px;
+    width:150px;
+    margin-left:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius:10px;
+}
+.prodimg{
+    height:200px;
+    width:200px;
+    margin-left:40px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius:10px;
+
+}

@@ -1,0 +1,47 @@
+<!--fetch all the records from accessories property in the .ts file which is accessing the accessories.json-->
+
+<marquee> Best Accessories sales in pal</marquee>
+<div style="margin-top: 30px;">
+    <div class="row">
+        <!--1st column-->
+        <div class="col col-lg-3 card">
+            <app-allproducts></app-allproducts>
+            
+        </div>
+
+        <!--2nd column-->
+        <div class="card col-lg-9" style="border:none;margin-top: 30px;">
+            <div class="card-body col-lg-12">
+                <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:15px;"
+                    *ngFor="let m of accessories">
+                    <div class="col-lg-3">
+                        <!--Property Binding-->
+                        <img [src]="m.img">
+                    </div>
+                    <div class="col-lg-6" style="margin-top:20px;">
+                        <!--Interpolation Binding-->
+                        <div>
+                            Product: {{ m.pname | uppercase}}
+                            <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+                        </div>
+                        <hr>
+                        <div [hidden]="productDetails">
+                            Description: {{m.pdescription}}
+                            <br>
+                            Price: {{ m.price | currency:'INR'}}
+                            <br>
+                            <app-counter></app-counter>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--3rd column-->
+        <!-- <div class="col col-lg-3"*ngFor="let m of accessories"> -->
+            <!--Property Binding-->
+            <!-- <img [src]="m.img"> -->
+            
+        <!-- </div> -->
+    </div>
+</div>
+

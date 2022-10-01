@@ -1,0 +1,111 @@
+<!--TWO WAY BINDING-->
+          <!--[(ngModel)]-->
+          <!--FormsModule in the app.module.ts-->
+          <!-- <input type="text" [(ngModel)]="name"><span>Welcome {{name}}</span> -->
+
+<!--IMAGE CAROUSEL-->
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="/assets/icon.png" class="d-block w-100" alt="CSS">
+        <div class="carousel-caption d-none d-md-block">
+           <!-- <h5 [ngClass]="prod_array">Make it special</h5> --> -->
+          <p [ngStyle]="{color:mycolor}">Gifts Hub</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="/assets/home.jpg" class="d-block w-100" alt="JS">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5 [ngClass]="prod_array">Celebrate your day</h5> -->
+          <p [ngStyle]="{color:mycolor}">Surprise your beloved</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/hope.png" class="d-block w-100" alt="JQ">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5 [ngClass]="prod_array">Customize your Surroundings</h5> -->
+          <p [ngStyle]="{color:mycolor}">Decor up</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <br>
+  <app-cards></app-cards>
+  <!-- Enter the Color for Carousel Contents:  <input [(ngModel)]="mycolor" type="text" style="border-radius:10px;"> -->
+  <!-- <br> -->
+  <!-- <br> -->
+  <!--Event to hide product details-->
+  <!-- <button (click)="hide_products()" [style.background-color]="mycolor">Available Categories</button> -->
+  <!--*ngFor to retrieve the contents from products-->
+  <!--*ngIf in the <ul> for toggle effct - hide/show the contents-->
+  <!-- <ul *ngIf="isVisible"> -->
+    <!-- <li *ngFor="let product of Products" [ngStyle]="{color:mycolor}"> -->
+        <!-- {{product.productname}} -->
+    <!-- </li> -->
+  <!-- </ul> -->
+  
+  <!--*ngSwitch for Product-->
+  <!--Property Binding-->
+  <br>
+  <br>
+  <!-- <ul [ngSwitch]="product"> 
+    <li *ngSwitchCase="'Dress'">Dress</li>
+    <li *ngSwitchCase="'Footwear'">Footwear</li>
+    <li *ngSwitchCase="'Headphones'">Headphones</li>
+    <li *ngSwitchCase="'Laptop'">Laptop</li>
+    <li *ngSwitchDefault>Not Found</li>
+  </ul>
+  <hr> -->
+  <!--STYLE BINDING-->
+<!-- <p [style.color]="'red'" [style.font-size.px]="'24'" [style.background-color]="'aqua'">Red Color</p>
+<p [style.background-color]="'aqua'">Red Color</p>
+<p [style.font-size.px]="'24'">Red Color</p>
+<p class="stylebinding1">Class Binding</p>
+<hr> -->
+<!--TERNARY OPERATOR FOR STYLE BINDING-->
+<!-- <button [style.color]="errorcolor=='red1'?'red':'blue'">STYLE BINDING USING TERNARY </button>
+<hr> -->
+<!--Access the ProductDetails *ngFor and *ngSwitchCase-->
+<!--red,green,yellow classes are created in the component.css-->
+<!-- <ul *ngFor="let pdetails of ProductDetails" [ngSwitch]="pdetails.color">
+  <li *ngSwitchCase="'green'" class="green">
+    {{pdetails.pid}} - {{pdetails.pname}} - {{pdetails.status}}
+  </li>
+  <li *ngSwitchCase="'red'" class="red">
+    {{pdetails.pid}} - {{pdetails.pname}} - {{pdetails.status}}
+  </li>
+  <li *ngSwitchDefault class="yellow">
+    {{pdetails.pid}} - {{pdetails.pname}} - {{pdetails.status}}
+  </li>
+</ul>
+<hr> -->
+<!--Bootstrap contextual classes(eg text-success)-->
+<!-- <ul *ngFor="let pdetails of ProductDetails" [ngSwitch]="pdetails.status">
+  <li *ngSwitchCase="'Active'" class="text-success">
+    {{pdetails.pid}} - {{pdetails.pname}} - {{pdetails.status}}
+  </li>
+  <li *ngSwitchCase="'InActive'" class="text-danger">
+    {{pdetails.pid}} - {{pdetails.pname}} - {{pdetails.status}}
+  </li>
+  <li *ngSwitchDefault class="text-warning">
+    {{pdetails.pid}} - {{pdetails.pname}} - {{pdetails.status}}
+  </li>
+</ul>
+<hr>
+<p [style.color]="getColor()">Hello</p> -->

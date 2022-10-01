@@ -1,0 +1,87 @@
+<!--fetch all the records from accessories property in the .ts file which is accessing the accessories.json-->
+
+ <h1 style="text-align: center;"><span>CONTACT US FOR MORE INFO and QUERIES</span></h1>
+
+ <div style="margin-top: 20px;">
+    <div class="row background">
+       
+        <!--1st column-->
+        <div class="card col-lg-6 contact" style="border:none;margin-top: 30px;">
+            <div class="card-body col-lg-12 contact">
+                <div class="row contact" style="margin-top:10px;border-style:solid;border-color:black;border-radius:15px;"
+                    *ngFor="let m of contact">
+                    <div class="col-lg-3">
+                        <!--Property Binding-->
+                        <img [src]="m.img">
+                    </div>
+                    <div class="col-lg-9" style="margin-top:20px;">
+                        <!--Interpolation Binding-->
+                        <div>
+                            Queries Related : {{ m.pqueries}}
+                            <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+                        </div>
+                        <hr>
+                        <div [hidden]="productDetails">
+                            Supporter ID: {{m.pid}}
+                            <br>
+                            Supporter Name: {{m.pname | uppercase}}
+                            <br>
+                               Email: {{m.pemail}}
+                               <br>
+                               Contact Number: {{ m.pnum }}
+                               <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--2nd column-->
+        <div class="col col-lg-6 col-md-6 contactform">
+            <form>
+                
+                <div class="form-group">
+                    <label for="nameinput1">Name</label>
+                    <input type="text" class="form-control" id="nameinput1" aria-describedby="nameHelp" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="Phonenumber1">Phone Number</label>
+                    <input type="text" class="form-control" id="Phonenumber1" aria-describedby="numberHelp" placeholder="Enter Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+
+                    <label for="exampleFormControlSelect1">Select Related</label>
+                
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option value="" disabled>Select</option>
+                
+                      <option>Product related issues</option>
+                
+                      <option> Payment related issues</option>
+                
+                      <option>Service related issues</option>
+                
+                    </select>
+                
+                  </div>
+                  <div class="form-group">
+
+                    <label for="exampleFormControlTextarea1">Your Queries</label>
+                
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                
+                  </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            
+        </div>
+    </div>
+</div>
+
+

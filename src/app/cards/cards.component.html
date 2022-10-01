@@ -1,0 +1,72 @@
+<marquee>Best Products in Pal</marquee>
+<!--fetch all the records from product property in the .ts file which is accessing the products.json-->
+
+
+<!-- <div class="row">
+    <app-allproducts></app-allproducts>
+</div> -->
+<!-- <div class="row"> -->
+    <!-- <div class=" col col-lg-6 col-md-6"> -->
+
+   
+<!-- <div class="row" *ngFor="let prod of product" [ngSwitch]="prod.Status" style="border:none;float:left;">
+    
+    
+    <div class="card">
+        <a href={{prod.url}}>
+        <div>
+            <img [src]="prod.image" alt="">
+            <hr>
+        </div>
+        <div class="card-body">
+            <p class="desc"><b> Product:</b> {{prod.pname | uppercase}}</p>
+
+            <p class="desc"> <b>Description:</b> {{prod.pdescription}} </p>
+            <p class="desc"><b>Price: </b>{{prod.price | currency:'INR' }}/--</p>
+            <div>
+                <div style="float: left;">
+                    <p class="desc" style="padding-right: 10px;"> <b>Status:</b> </p>
+                </div>
+                <div style="padding-left: 10px; float: center; ">
+                    <p *ngSwitchCase="'In Stock'" class="text-success">
+                        {{prod.Status}}
+                    </p>
+                    <p *ngSwitchDefault class="text-danger">
+                        {{prod.Status}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        </a>
+    </div>
+    
+
+</div> -->
+<!-- </div> -->
+<!-- </div> -->
+
+<div class="row"  *ngFor="let prod of product" [ngSwitch]="prod.Status" style="border:none;float:left;">
+    <div class="card">
+        <div>
+            <img [src]="prod.image" alt="">
+            <hr>
+        </div>
+        <div class="card-body">
+          <p class="desc"><b> Product:</b> {{prod.pname | uppercase}}</p>
+        
+           <p class="desc"> <b>Description:</b> {{prod.pdescription}} </p> 
+           <p class="desc"><b>Price: </b>{{prod.price | currency:'INR' }}/--</p>
+            <div>
+                <div style="float: left;"><p class="desc" style="padding-right: 10px;"> <b>Status:</b> </p></div> 
+                <div style="padding-left: 10px; float: center; ">
+                    <p *ngSwitchCase="'In Stock'" class="text-success">
+                        {{prod.Status}} 
+                    </p>
+                    <p *ngSwitchDefault class="text-danger">
+                    {{prod.Status}}
+                    </p>
+                </div>        
+            </div>
+        </div>
+    </div>
+</div>

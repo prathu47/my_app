@@ -1,0 +1,48 @@
+input {
+    width: 60%;
+    margin-left: 50px;
+}
+
+label {
+    margin-left: 50px;
+}
+h4{
+    margin-left: 600px;
+
+}
+h2{
+    color: brown;
+}
+
+form {
+    padding: 20px;
+    margin-left: 200px;
+    margin-top: 40px;
+    width: 40%;
+    border-style: inset;
+    border-radius: 10px;
+    border-color: rgb(145, 33, 74);
+    box-shadow: 2px 3px 4px rgb(27, 128, 183);
+}
+
+form:hover {
+    color: rgb(120, 51, 165);
+    background-color: rgb(87, 151, 168);
+    transform:scale(1.2);
+
+}
+
+button {
+    margin-left: 100px;
+}
+
+span {
+    width: 60%;
+    margin-left: 100px;
+}
+img{
+    height:50px;
+    width:50px;  
+    margin-left: 100px;
+  margin-right: 100px;
+}
